@@ -7,14 +7,22 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
         <link rel="shortcut icon" href="/images/favicon.ico">
         <style>
-        body { background-color: #ccc; }
+        @font-face {
+            font-family: "Roundo";
+            src: local("Roundo"), url("/fonts/Roundo-Light.woff"), format("woff");
+        }
+        body { font-family: "Roundo", sans-serif; background-color: #ccc; }
         .container { max-width: 1000px; margin: auto; margin-top: 30vh; }
         .logo { display: block; width: 80%; height: auto; margin: auto; }
+        .footer { position: fixed; bottom: 0; width: 100%; text-align: center; color: #999; padding: 10px;}
         </style>
     </head>
     <body>
         <div class="container">
             <img class="logo" src="/images/logo_full.png">
+        </div>
+        <div class="footer">
+            Copyright &copy; 2019-2020 &nbsp; Simple DNS Managed DNS
         </div>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51049739-5"></script>
